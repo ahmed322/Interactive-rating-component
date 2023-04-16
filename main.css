@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --second-color: #262e38;
+}
+
+body {
+  background-color: #131519;
+}
+
+.main {
+  background-color: #1f252f;
+  color: white;
+  margin: 100px auto;
+  height: 420px;
+  width: 400px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+.container {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+
+.main>div {
+  padding: 20px;
+}
+
+.main>div img {
+  background-color: var(--second-color);
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.selected {
+  display: none;
+}
+
+.summary {
+  width: fit-content;
+  color: #f07539;
+  background: var(--second-color);
+  padding: 5px 10px;
+  margin: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
+
+.main .container p {
+  color: #6d737e;
+  line-height: 1.6;
+}
+
+.container .rate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .rate span {
+  background-color: var(--second-color);
+  color: #6d737e;
+  padding: 15px 19px;
+  margin: 15px 0;
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 50%;
+}
+
+.container .rate .active {
+  background-color: #f07539;
+  color: white;
+}
+
+.container .rate span:hover {
+  color: white;
+  background-color: #7b889a;
+}
+
+.submit {
+  background-color: #f07539;
+  color: white;
+  margin: 15px 50%;
+  padding: 15px;
+  width: 90%;
+  border: none;
+  cursor: pointer;
+  transform: translateX(-50%);
+  transition: .3s;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+}
+
+.submit:hover {
+  background-color: white;
+  color: #f07539;
+}
